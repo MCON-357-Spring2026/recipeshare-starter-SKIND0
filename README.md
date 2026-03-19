@@ -154,7 +154,7 @@ Use `psql` to inspect the database directly as you interact with the API. This h
 psql -U postgres -d recipeshare
 ```
 
-> Replace `postgres` with your PostgreSQL username if different.
+> ReplacSELECT e `postgres` with your PostgreSQL username if different.
 
 ---
 
@@ -170,7 +170,7 @@ SELECT * FROM recipes;
 -- See recipes with their owner's name
 SELECT recipes.id, recipes.title, users.username
 FROM recipes
-JOIN users ON recipes.user_id = users.id;
+       JOIN users ON recipes.user_id = users.id;
 ```
 
 ---
